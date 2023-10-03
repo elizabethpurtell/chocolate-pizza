@@ -1,0 +1,207 @@
+/* Global */
+
+body {
+  background-color: white;
+}
+
+header {
+  max-width: 100%;
+  /* justify-content: center; */
+}
+
+.flex-container1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex-container1 section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  align-content: center;
+}
+
+
+.hdrLogo {
+  height: 70px;
+  width: 70px;
+  margin-right: 10px;
+}
+
+.title {
+  margin-left: 10px;
+  font-family: cursive;
+  font-weight: bolder;
+  font-size: 2.5em;
+}
+
+.underTitle {
+  font-size: 1em;
+  margin-left: 10px;
+  text-transform: uppercase;
+}
+
+.iconImages {
+  max-width: 100%;
+}
+
+.iconImages ul {
+  align-items: right;
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+}
+
+.iconImages li {
+  display: inline;
+  justify-content: space-around;
+}
+
+
+/* Text */
+h1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* text-transform: uppercase; */
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 2em;
+  text-align: left;
+  font-weight: bolder;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+h3 {
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-size: 1em;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+h5 {
+  font-size: smaller;
+  text-align: center;
+}
+
+p {
+  font-size: 1em;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+main {
+  display: contents;
+  margin: 100px;
+  padding: 15px;
+  justify-content: center;
+}
+
+.flex-container2 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.row {
+  display: contents;
+  padding: 10px 60px;
+}
+
+.row:after {
+  content: "";
+  display: flex;
+  clear: both;
+}
+
+.column {
+  display: flex;
+  max-width: 100%;
+  /* margin: 30px; */
+}
+
+.mainIcon {
+  display: inline;
+  height: 20px;
+  width: 20px;
+}
+
+.primaryImg {
+  display: block;
+  max-width: 50%;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  clear: both;
+}
+
+.recipeText p {
+  margin: 100px;
+  text-align: center;
+  align-self: center;
+}
+
+.recipe-Container {
+  position: relative;
+  display: inline-block;
+}
+
+.recipeImg {
+  max-width: 100%;
+  height: auto;
+}
+
+.overlay-list1 {
+  position: absolute;
+  /* Position the list relative to its closest positioned ancestor */
+  top: 0;
+  /* Adjust the top position as needed */
+  left: 0;
+  /* Adjust the left position as needed */
+  background-color: rgba(255, 255, 255, 0.7);
+  /* Add a background color to the list for readability */
+  padding: 10px;
+  /* Add padding to the list items for spacing */
+  z-index: 1;
+  /* Set the z-index to be above the image (usually 1 or higher) */
+  list-style: square;
+  /* Remove default list bullets */
+}
+
+.overlay-list2 {
+  position: absolute;
+  /* Position the list relative to its closest positioned ancestor */
+  top: 0;
+  /* Adjust the top position as needed */
+  left: 500px;
+  /* Adjust the left position as needed */
+  background-color: rgba(255, 255, 255, 0.7);
+  /* Add a background color to the list for readability */
+  padding: 10px;
+  /* Add padding to the list items for spacing */
+  z-index: 1;
+  /* Set the z-index to be above the image (usually 1 or higher) */
+  list-style: square;
+  /* Remove default list bullets */
+}
+
+.authorInfoBlock {
+  display: inline;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
