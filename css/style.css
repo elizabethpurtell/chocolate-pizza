@@ -4,60 +4,121 @@ body {
   background-color: white;
 }
 
-header {
-  max-width: 100%;
-  /* justify-content: center; */
-}
+/* Text */
 
-.flex-container1 {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+
+/* main  */
+
+main {
   justify-content: center;
 }
 
-.flex-container1 section {
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  align-content: center;
+/* start grid setup */
+/* line of icons */
+#topRight {
+  grid-area: topRight;
+}
+/* logo image and name */
+#topLeft {
+  grid-area: topLeft;
+}
+/* titles, dates, large image */
+#sec1 {
+  grid-area: sec1;
+}
+/* large main image sec1.5 */
+#sec15{
+  grid-area: sec15;
+}
+/* recipe description */
+#sec2 {
+  grid-area: sec2;
+}
+/* recipe with bkgrnd image */
+#sec3 {
+  grid-area: sec3;
+}
+/* author info */
+#sec4 {
+  grid-area: sec4;
+}
+footer {
+  grid-area: footer;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+  'topLeft topLeft top topRight topRight'
+  'sec1 sec1 sec1 sec1 sec1' 
+  'sec15 sec15 sec15 sec15 sec15'
+  'sec2 sec2 sec2 sec2 sec2' 
+  'sec3 sec3 sec3 sec3 sec3'
+  'sec4 sec4 sec4 sec4 sec4'
+  'footer footer footer footer footer';
+  row-gap: 5%;
+  column-gap: 0px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: rgb(255, 255, 255);
+  justify-content: center;
+  align-items: center;
+}
+
+/* section */
+#topLeft {
+  display: grid;
+  justify-content: left;
+}
+
+#topRight {
+  display: grid;
+  justify-content: right;
+}
+
+#topRight ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#topRight li {
+  display: inline;
 }
 
 
-.hdrLogo {
+#sec1 {
+  display: grid;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+#sec15 {
+  display: grid;
+  max-width: 100%;
+}
+
+
+
+#hdrLogo {
   height: 70px;
   width: 70px;
   margin-right: 10px;
 }
 
-.title {
+#titleTop {
   margin-left: 10px;
   font-family: cursive;
   font-weight: bolder;
   font-size: 2.5em;
 }
 
-.underTitle {
+#underTopTitle {
   font-size: 1em;
   margin-left: 10px;
   text-transform: uppercase;
-}
-
-.iconImages {
-  max-width: 100%;
-}
-
-.iconImages ul {
-  align-items: right;
-  list-style-type: none;
-  padding: 0;
-  overflow: hidden;
-}
-
-.iconImages li {
-  display: inline;
-  justify-content: space-around;
 }
 
 
@@ -101,36 +162,7 @@ p {
   margin-bottom: 5px;
 }
 
-main {
-  display: contents;
-  margin: 100px;
-  padding: 15px;
-  justify-content: center;
-}
 
-.flex-container2 {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.row {
-  display: contents;
-  padding: 10px 60px;
-}
-
-.row:after {
-  content: "";
-  display: flex;
-  clear: both;
-}
-
-.column {
-  display: flex;
-  max-width: 100%;
-  /* margin: 30px; */
-}
 
 .mainIcon {
   display: inline;
