@@ -6,122 +6,6 @@ body {
 
 /* Text */
 
-
-/* main  */
-
-main {
-  justify-content: center;
-}
-
-/* start grid setup */
-/* line of icons */
-#topRight {
-  grid-area: topRight;
-}
-/* logo image and name */
-#topLeft {
-  grid-area: topLeft;
-}
-/* titles, dates, large image */
-#sec1 {
-  grid-area: sec1;
-}
-/* large main image sec1.5 */
-#sec15{
-  grid-area: sec15;
-}
-/* recipe description */
-#sec2 {
-  grid-area: sec2;
-}
-/* recipe with bkgrnd image */
-#sec3 {
-  grid-area: sec3;
-}
-/* author info */
-#sec4 {
-  grid-area: sec4;
-}
-footer {
-  grid-area: footer;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-areas: 
-  'topLeft topLeft top topRight topRight'
-  'sec1 sec1 sec1 sec1 sec1' 
-  'sec15 sec15 sec15 sec15 sec15'
-  'sec2 sec2 sec2 sec2 sec2' 
-  'sec3 sec3 sec3 sec3 sec3'
-  'sec4 sec4 sec4 sec4 sec4'
-  'footer footer footer footer footer';
-  row-gap: 5%;
-  column-gap: 0px;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  background-color: rgb(255, 255, 255);
-  justify-content: center;
-  align-items: center;
-}
-
-/* section */
-#topLeft {
-  display: grid;
-  justify-content: left;
-}
-
-#topRight {
-  display: grid;
-  justify-content: right;
-}
-
-#topRight ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-#topRight li {
-  display: inline;
-}
-
-
-#sec1 {
-  display: grid;
-  margin-top: 10px;
-  justify-content: center;
-  align-items: center;
-}
-
-#sec15 {
-  display: grid;
-  max-width: 100%;
-}
-
-
-
-#hdrLogo {
-  height: 70px;
-  width: 70px;
-  margin-right: 10px;
-}
-
-#titleTop {
-  margin-left: 10px;
-  font-family: cursive;
-  font-weight: bolder;
-  font-size: 2.5em;
-}
-
-#underTopTitle {
-  font-size: 1em;
-  margin-left: 10px;
-  text-transform: uppercase;
-}
-
-
 /* Text */
 h1 {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -162,14 +46,149 @@ p {
   margin-bottom: 5px;
 }
 
+/* main  */
+
+main {
+  justify-content: center;
+}
+
+/* start grid setup */
+/* line of icons */
+#topRight {
+  grid-area: top;
+}
+/* logo image and name */
+#topLeft {
+  grid-area: top;
+}
+/* titles, dates, large image */
+#sec1 {
+  grid-area: sec1;
+}
+/* large main image sec1.5 */
+#sec15{
+  grid-area: sec15;
+}
+/* recipe description */
+#sec2 {
+  grid-area: sec2;
+}
+/* recipe with bkgrnd image */
+#sec3 {
+  grid-area: sec3;
+}
+/* author info */
+#sec4 {
+  grid-area: sec4;
+}
+footer {
+  grid-area: footer;
+}
+
+/* 'topRight topRight topRight topRight topRight'  */
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+  'top top top top top' 'sec1 sec1 sec1 sec1 sec1' 'sec15 sec15 sec15 sec15 sec15' 'sec2 sec2 sec2 sec2 sec2' 'sec3 sec3 sec3 sec3 sec3' 'sec4 sec4 sec4 sec4 sec4' 'footer footer footer footer footer';
+  grid-gap: 0px;
+  row-gap: 20px;
+  column-gap: 10px;
+  max-width: 1000px;;
+  margin: 10px;
+  padding-bottom: 50px;
+  background-color: rgba(130, 130, 130, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+/* section */
+
+section {
+  display: contents;
+}
+
+section #top {
+  display: inline;
+  max-height: 90px;
+}
+
+section #top #topRight {
+  display: inline;
+  justify-content: right;
+}
+
+#topRight ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#topRight li {
+  display: inline;
+  justify-content: space-between;
+}
 
 
+#sec1 {
+  display: grid;
+  margin-top: 10px;
+  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+#sec15 {
+  display: grid;
+  max-width: 100%;
+}
+
+#sec2 {
+  display: grid;
+}
+
+#sec3 {
+  display: grid;
+}
+
+#sec4 {
+  display: grid;
+}
+ 
+footer {
+  display: grid;
+}
+
+#topLeft #hdrLogo img {
+  height: 70px;
+  width: 70px;
+  /* margin-right: 10px; */
+}
+
+#topLeft #titleTop h1 {
+  margin-left: 10px;
+  font-family: cursive;
+  font-weight: bolder;
+  font-size: 2.5em;
+}
+
+#topLeft #underTopTitle p {
+  font-size: 1em;
+  margin-left: 10px;
+  text-transform: uppercase;
+}
+
+
+
+
+/* 
 .mainIcon {
   display: inline;
   height: 20px;
   width: 20px;
-}
-
+} */
+/* 
 .primaryImg {
   display: block;
   max-width: 50%;
@@ -192,8 +211,8 @@ p {
 .recipeImg {
   max-width: 100%;
   height: auto;
-}
-
+} */
+/* 
 .overlay-list1 {
   position: absolute;
   /* Position the list relative to its closest positioned ancestor */
@@ -209,8 +228,8 @@ p {
   /* Set the z-index to be above the image (usually 1 or higher) */
   list-style: square;
   /* Remove default list bullets */
-}
-
+} */
+/* 
 .overlay-list2 {
   position: absolute;
   /* Position the list relative to its closest positioned ancestor */
@@ -226,14 +245,8 @@ p {
   /* Set the z-index to be above the image (usually 1 or higher) */
   list-style: square;
   /* Remove default list bullets */
-}
 
+/* 
 .authorInfoBlock {
   display: inline;
-}
-
-footer {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
+} */ */
