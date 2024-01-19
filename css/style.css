@@ -19,13 +19,10 @@ h2 {
 }
 
 h3 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: grey;
   font-size: 1.5em;
-  text-align: center;
-}
-
-h4 {
-  font-size: 1em;
-  text-align: center;
+  text-align: left;
 }
 
 h5 {
@@ -34,7 +31,9 @@ h5 {
 }
 
 p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 1em;
+  color: grey;
   text-align: left;
 }
 
@@ -187,6 +186,7 @@ header {
   justify-content: left;
   margin-top: 40px;
 }
+
 #articleTitle-area h1 {
   font-size: 2em;
   color: black;
@@ -200,7 +200,8 @@ header {
   margin-bottom: 30px;
 }
 
-#articlePrint-area img, #articlePrint-area p{
+#articlePrint-area img,
+#articlePrint-area p {
   display: inline-block;
   margin-bottom: 0px;
   margin-top: 0px;
@@ -218,6 +219,7 @@ header {
 #sec2 {
   display: grid;
 }
+
 .paraStyle {
   font-size: 1.1em;
   text-indent: 2em;
@@ -225,14 +227,61 @@ header {
   color: grey;
   line-height: 1.5em;
 }
+
 #sec3 {
   display: grid;
+}
+
+section > #two-colRecipe {
+  background-image: url(/img/list-bg.png);
+  list-style: none;
+  box-shadow: lightslategray;
+  margin-bottom: 50px;
+}
+
+#overlay-listL,
+#overlay-listR {
+  list-style: none;
+  display: inline-block;
+  font-family: 'Comic Neue', cursive;
+  font-size: 1.25em;
+  line-height: 1.5em;
+}
+
+#overlay-listL {
+  margin-left: 25px;
+}
+
+#overlay-listR {
+  margin-left: 140px;
+}
+
+#box1,
+#box2,
+#box3,
+#box4,
+#box5,
+#box6,
+#box7,
+#box8,
+#box9,
+#box10,
+#box11,
+#box12 {
+  color: black;
+  text-decoration: line-through;
 }
 
 #sec4 {
   display: grid;
 }
-
+#shareBtn {
+  height: 50px;
+  width: 120px;
+  border: none;
+  background-color: rgb(210, 88, 43);
+  color: white;
+}
 footer {
   display: grid;
 }
